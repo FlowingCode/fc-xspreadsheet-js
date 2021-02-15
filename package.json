@@ -1,7 +1,19 @@
 {
-  "name": "fc-xspreadsheet",
-  "version": "0.9.0",
+  "name": "@flowingcode/fc-xspreadsheet",
+  "version": "0.9.1",
   "description": "Web component wrapper of x-data-spreadsheet",
+  "keywords": [
+    "web-components",
+    "lit-element"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlowingCode/fc-xspreadsheet-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FlowingCode/fc-xspreadsheet-js/issues"
+  },
+  "homepage": "https://github.com/FlowingCode/fc-xspreadsheet-js#readme",
   "main": "fc-xspreadsheet.js",
   "module": "fc-xspreadsheet.js",
   "type": "module",
