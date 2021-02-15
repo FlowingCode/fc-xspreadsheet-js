@@ -1,20 +1,20 @@
 ---
 layout: example.11ty.cjs
-title: <my-element> ⌲ Examples ⌲ Basic
+title: <fc-xspreadsheet> ⌲ Examples ⌲ Basic
 tags: example
 name: Basic
 description: A basic example
 ---
 
 <style>
-  my-element p {
+  fc-xspreadsheet p {
     border: solid 1px blue;
     padding: 8px;
   }
 </style>
-<my-element>
+<fc-xspreadsheet>
   <p>This is child content</p>
-</my-element>
+</fc-xspreadsheet>
 
 <h3>CSS</h3>
 
@@ -28,7 +28,7 @@ description: A basic example
 <h3>HTML</h3>
 
 ```html
-<my-element>
+<fc-xspreadsheet>
   <p>This is child content</p>
-</my-element>
+</fc-xspreadsheet>
 ```

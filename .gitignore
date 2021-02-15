@@ -1,4 +1,6 @@
 /node_modules/
 
 # only generated for size check
-my-element.bundled.js
+fc-xspreadsheet.bundled.js
+fc-xspreadsheet.bundled.css
+/debug.log

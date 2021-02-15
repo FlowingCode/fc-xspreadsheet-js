@@ -1,16 +1,16 @@
-import {MyElement} from '../my-element.js';
+import {FCXSpreadsheet} from '../fc-xspreadsheet.js';
 import {fixture, html} from '@open-wc/testing';
 
 const assert = chai.assert;
 
-suite('my-element', () => {
+suite('fc-xspreadsheet', () => {
   test('is defined', () => {
-    const el = document.createElement('my-element');
-    assert.instanceOf(el, MyElement);
+    const el = document.createElement('fc-xspreadsheet');
+    assert.instanceOf(el, FCXSpreadsheet);
   });
 
   test('renders with default values', async () => {
-    const el = await fixture(html`<my-element></my-element>`);
+    const el = await fixture(html`<fc-xspreadsheet></fc-xspreadsheet>`);
     assert.shadowDom.equal(
       el,
       `
@@ -22,7 +22,7 @@ suite('my-element', () => {
   });
 
   test('renders with a set name', async () => {
-    const el = await fixture(html`<my-element name="Test"></my-element>`);
+    const el = await fixture(html`<fc-xspreadsheet name="Test"></fc-xspreadsheet>`);
     assert.shadowDom.equal(
       el,
       `
@@ -34,7 +34,7 @@ suite('my-element', () => {
   });
 
   test('handles a click', async () => {
-    const el = await fixture(html`<my-element></my-element>`);
+    const el = await fixture(html`<fc-xspreadsheet></fc-xspreadsheet>`);
     const button = el.shadowRoot.querySelector('button');
     button.click();
     await el.updateComplete;

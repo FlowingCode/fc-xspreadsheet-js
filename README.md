@@ -1,6 +1,6 @@
-# LitElement JavaScript starter 
+# fc-xspreadsheet 
 
-This project includes a sample component using LitElement with JavaScript.
+A web component lit-element based wrapper for x-data-spreadsheet javascript library
 
 ## Setup
 
@@ -22,7 +22,7 @@ npm test
 
 ## Dev Server
 
-This sample uses open-wc's [es-dev-server](https://github.com/open-wc/open-wc/tree/master/packages/es-dev-server) for previewing the project without additional build steps. ES dev server handles resolving Node-style "bare" import specifiers, which aren't supported in browsers. It also automatically transpiles JavaScript and adds polyfills to support older browsers.
+This sample uses web-dev-server for local development.
 
 To run the dev server and open the project in a new browser tab:
 

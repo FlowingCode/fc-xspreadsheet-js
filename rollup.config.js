@@ -12,15 +12,15 @@
  * http://polymer.github.io/PATENTS.txt
  */
 
-import filesize from 'rollup-plugin-filesize';
 import {terser} from 'rollup-plugin-terser';
 import resolve from 'rollup-plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
+import litcss from 'rollup-plugin-lit-css';
 
 export default {
-  input: 'my-element.js',
+  input: 'fc-xspreadsheet.js',
   output: {
-    file: 'my-element.bundled.js',
+    file: 'fc-xspreadsheet.bundled.js',
     format: 'esm',
   },
   onwarn(warning) {
@@ -29,6 +29,7 @@ export default {
     }
   },
   plugins: [
+    litcss({ include: ['**/*.css'] }),
     replace({'Reflect.decorate': 'undefined'}),
     resolve(),
     terser({
@@ -39,9 +40,6 @@ export default {
           regex: /^__/,
         },
       },
-    }),
-    filesize({
-      showBrotliSize: true,
     })
   ]
 }

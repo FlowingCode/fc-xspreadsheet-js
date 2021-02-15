@@ -183,4 +183,4 @@ class Y extends X{static get styles(){return K`
         Click Count: ${this.count}
       </button>
       <slot></slot>
-    `}_onClick(){this.count++}}window.customElements.define("my-element",Y);export{Y as MyElement};
+    `}_onClick(){this.count++}}window.customElements.define("my-element",Y);export{Y as FCXSpreadsheet};
